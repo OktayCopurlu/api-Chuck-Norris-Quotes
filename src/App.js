@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+/*
+Public API'lari kullanarak bir applikasyon yazılacak.
+
+  -Olmasini gereken yapiler:
+    - fetch api kullanimi
+    - async-await kullanimi
+    - API datasinin gösterilmesi
+    - state kullanimi
+    - useEffect kullanimi
+
+  -Kriterler
+    - API'dan data cekilmesi
+    - Programin düzgün calismasi
+    - Kod makyajina dikkat edilmesi
+    - En az iki kücük test yazilmasi
+*/
+import "./App.css";
+import Api from "./components/component";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Api />
     </div>
   );
 }
